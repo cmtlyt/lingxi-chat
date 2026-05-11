@@ -3,6 +3,7 @@ import { routeTree } from './route-tree.gen';
 
 export function getRouter() {
   const router = createTanStackRouter({
+    basepath: 'lingxi-chat',
     routeTree,
     scrollRestoration: true,
     defaultPreload: 'intent',
