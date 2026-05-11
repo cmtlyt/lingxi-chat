@@ -1,0 +1,8 @@
+/**
+ * @filename: lint-staged.config.js
+ * @type {import('lint-staged').Configuration}
+ */
+export default {
+  '*.ts': ['pnpm run check'],
+  '*.test.{ts,tsx,js,jsx}': ['pnpm run test:ci'],
+};
